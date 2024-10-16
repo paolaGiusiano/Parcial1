@@ -17,15 +17,9 @@
     npm run dev
 
 
-## Configuración del Backend
+## Iniciar el servidor JSon
 
-1. **Instalar dependencias:**
-
-   ```bash
-   npm install express
-
-2. **Iniciar la app:**
 
      ```bash
-    node app.js
+    json-server --watch db.json
 

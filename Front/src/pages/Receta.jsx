@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import RecetasCard from '../components/RecetasCard';
 
+
 const Receta = () => {
   const [recetas, setRecetas] = useState([]);
   const [tipoSeleccionado, setTipoSeleccionado] = useState(''); 
@@ -58,7 +59,7 @@ const Receta = () => {
 
       <div className="columns is-multiline">
         {recetasFiltradas().map(receta => (
-          <div key={receta.id} className="column">
+          <div key={receta.id} className="column is-one-quarter-desktop">
             <RecetasCard receta={receta} onDelete={eliminarReceta} />
           </div>
         ))}
