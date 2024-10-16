@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import RecetasCard from '../components/RecetasCard';
+import './RecetaStyle.css';
 
 
 const Receta = () => {
