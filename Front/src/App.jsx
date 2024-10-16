@@ -4,6 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Routes, Route, Navigate } from "react-router-dom";
 // import Home  from './pages/Home'
+import Recetas from './pages/Receta';
+import DetallesReceta from './pages/DetallesReceta';
+import AgregarReceta from './pages/AgregarReceta';
+import EditarReceta from './pages/EditarReceta';
+
 
 
 
@@ -14,11 +19,17 @@ function App() {
     <>
        <Routes>
       
-        {/*<Route path="/*" element={<Navigate replace to="/home" />} />
+        <Route path="/*" element={<Navigate replace to="/recetas" />} />
 
-        <Route path="/home" element={<Home />} />
+        <Route path="/recetas" element={<Recetas />} />
 
-        <Route path="/add-sport" element={<AddSport />} />
+        <Route path="/details/:id" element={<DetallesReceta />}  /> 
+
+        <Route path="/agregar" element={<AgregarReceta />} />
+
+        <Route path="/editar/:id" element={<EditarReceta />} />
+
+        {/*<Route path="/add-sport" element={<AddSport />} />
 
         <Route path="/sports/:id" element={<Detalles />}  /> 
         */}

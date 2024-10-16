@@ -1,0 +1,19 @@
+.container {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .field.filter {
+    flex-grow: 1;
+  }
+  
+  .button {
+    margin-left: 20px; 
+  }
+  
